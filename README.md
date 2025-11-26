@@ -47,17 +47,20 @@ This project investigates whether a CAE’s **reconstruction error** can provide
 
 We consider three chest X-ray datasets:
 
-1. **NIH ChestX-ray14**  
+1. **NIH ChestX-ray14**
+   https://www.kaggle.com/datasets/nih-chest-xrays/data 
    - Large adult dataset from a US institution.  
    - Used as the **training domain** for both autoencoder and classifier.  
    - Binary target: **No Finding vs Abnormal** (e.g. Pneumonia vs Normal).
 
-2. **Pediatric CXR Dataset** (China)  
+3. **Pediatric CXR Dataset** (China)  
+   https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia 
    - Pediatric patients (children) from a different hospital.  
    - Binary labels: **Pneumonia vs Normal**.  
    - Introduces **demographic** + **institutional** shift.
 
-3. **CheXpert** (Stanford)  
+5. **CheXpert** (Stanford)
+   https://www.kaggle.com/datasets/ashery/chexpert 
    - Large adult dataset from another US institution.  
    - Different acquisition & labeling pipelines, **heavily imbalanced** towards abnormal cases.  
    - Introduces **institutional** + **prevalence** shift.
